@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (4.7.0)
+  - Kingfisher (4.6.4)
+  - LFLiveKit (2.6)
+  - Masonry (1.1.0)
+  - SwiftyJSON (4.0.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - Alamofire (= 4.7)
+  - Kingfisher (~> 4.6)
+  - LFLiveKit
+  - Masonry
+  - SwiftyJSON
+  - YYKit
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
+  LFLiveKit: 2219563721f8aa0f188effc3395a06e2d53b23f2
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 594d696e2c77ab1701162c944bde14d8f38c05a8
+
+COCOAPODS: 1.4.0

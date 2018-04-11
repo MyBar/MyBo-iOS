@@ -1,0 +1,6 @@
+framework module Pods_MyBo {
+  umbrella header "Pods-MyBo-umbrella.h"
+
+  export *
+  module * { export * }
+}
