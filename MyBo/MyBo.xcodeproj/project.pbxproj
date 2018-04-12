@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		548389002E0938081F8B200E /* Pods_MyBo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D575C544BD95EF08221427DA /* Pods_MyBo.framework */; };
+		8D1B811D207EF1B300539E58 /* MBLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B811C207EF1B300539E58 /* MBLaunchViewController.swift */; };
+		8D1B811F207EFB7500539E58 /* MBPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B811E207EFB7500539E58 /* MBPresentationController.swift */; };
+		8D1B8121207F05DF00539E58 /* MBPresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1B8120207F05DE00539E58 /* MBPresentedViewController.swift */; };
 		8D37D1D9207C99E7008591CD /* MBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37D1D8207C99E7008591CD /* MBBaseViewController.swift */; };
 		8D37D1DB207C9A18008591CD /* MBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37D1DA207C9A18008591CD /* MBNavigationController.swift */; };
 		8D37D1DD207C9A79008591CD /* MBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37D1DC207C9A79008591CD /* MBHomeViewController.swift */; };
@@ -31,6 +34,9 @@
 
 /* Begin PBXFileReference section */
 		1FF3BED35821715F08811D1C /* Pods-MyBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MyBo/Pods-MyBo.release.xcconfig"; sourceTree = "<group>"; };
+		8D1B811C207EF1B300539E58 /* MBLaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBLaunchViewController.swift; sourceTree = "<group>"; };
+		8D1B811E207EFB7500539E58 /* MBPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPresentationController.swift; sourceTree = "<group>"; };
+		8D1B8120207F05DE00539E58 /* MBPresentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPresentedViewController.swift; sourceTree = "<group>"; };
 		8D37D1D8207C99E7008591CD /* MBBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBaseViewController.swift; sourceTree = "<group>"; };
 		8D37D1DA207C9A18008591CD /* MBNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBNavigationController.swift; sourceTree = "<group>"; };
 		8D37D1DC207C9A79008591CD /* MBHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBHomeViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +132,8 @@
 			children = (
 				8D37D1D8207C99E7008591CD /* MBBaseViewController.swift */,
 				8D37D1DA207C9A18008591CD /* MBNavigationController.swift */,
+				8D1B811E207EFB7500539E58 /* MBPresentationController.swift */,
+				8D1B8120207F05DE00539E58 /* MBPresentedViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -215,6 +223,7 @@
 		8D9A6328207BB91700D8F11D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8D1B811C207EF1B300539E58 /* MBLaunchViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -591,11 +600,14 @@
 				8D9A631C207BA0EE00D8F11D /* MBConst.swift in Sources */,
 				8D37D1E1207C9AC7008591CD /* MBFocusViewController.swift in Sources */,
 				8D37D1DD207C9A79008591CD /* MBHomeViewController.swift in Sources */,
+				8D1B811F207EFB7500539E58 /* MBPresentationController.swift in Sources */,
 				8D37D1D9207C99E7008591CD /* MBBaseViewController.swift in Sources */,
 				8D46BF11207DA42100901928 /* MBHomeNavTitleView.swift in Sources */,
+				8D1B8121207F05DF00539E58 /* MBPresentedViewController.swift in Sources */,
 				8D37D1E5207CD494008591CD /* MBRecommendationViewController.swift in Sources */,
 				8D9A6323207BB7A200D8F11D /* MBTabBar.swift in Sources */,
 				8D9A632A207BBB0B00D8F11D /* MBTabBarController.swift in Sources */,
+				8D1B811D207EF1B300539E58 /* MBLaunchViewController.swift in Sources */,
 				8D9A631A207B9D9600D8F11D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

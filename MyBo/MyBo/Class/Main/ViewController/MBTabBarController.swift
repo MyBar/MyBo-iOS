@@ -60,6 +60,17 @@ class MBTabBarController: UITabBarController {
 
 extension MBTabBarController: MBTabBarDelegate {
     func tabBar(_ tabBar: UITabBar, didClickLiveButton button: UIButton) {
-        NSLog("----- %@", button)
+        let launchVC = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "MBLaunchViewController") as! MBLaunchViewController
+        launchVC.modalPresentationStyle = .custom
+        launchVC.presentedViewHeight = 300.0
+        launchVC.transitioningDelegate = self
+        self.present(launchVC, animated: true, completion: nil)
+    }
+}
+
+extension MBTabBarController: UIViewControllerTransitioningDelegate {
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+
+        return MBPresentationController(presentedViewController: presented, presenting: presenting)
     }
 }
