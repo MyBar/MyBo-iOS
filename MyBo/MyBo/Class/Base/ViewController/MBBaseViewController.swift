@@ -10,12 +10,19 @@ import UIKit
 
 class MBBaseViewController: UIViewController {
 
+    var titleURLModel: MBTitleURLModel? {
+        didSet {
+            self.title = self.titleURLModel?.title
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let color = RGBCOLOR(CGFloat(arc4random() % 255), CGFloat(arc4random() % 255), CGFloat(arc4random() % 255))
 
         self.view.backgroundColor = color
+        self.title = self.titleURLModel?.title
     }
 
     override func didReceiveMemoryWarning() {

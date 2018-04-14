@@ -17,19 +17,42 @@
 		8D37D1DF207C9AA2008591CD /* MBLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37D1DE207C9AA2008591CD /* MBLocationViewController.swift */; };
 		8D37D1E1207C9AC7008591CD /* MBFocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37D1E0207C9AC7008591CD /* MBFocusViewController.swift */; };
 		8D37D1E3207C9AE4008591CD /* MBProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37D1E2207C9AE4008591CD /* MBProfileViewController.swift */; };
-		8D37D1E5207CD494008591CD /* MBRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37D1E4207CD494008591CD /* MBRecommendationViewController.swift */; };
 		8D37D1E7207CD4B1008591CD /* MBMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37D1E6207CD4B1008591CD /* MBMusicViewController.swift */; };
 		8D37D1E9207CD4C5008591CD /* MBRadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D37D1E8207CD4C5008591CD /* MBRadioViewController.swift */; };
 		8D37D1EB207CE8D7008591CD /* TitleURLs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D37D1EA207CE8D6008591CD /* TitleURLs.plist */; };
 		8D46BF11207DA42100901928 /* MBHomeNavTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D46BF10207DA42100901928 /* MBHomeNavTitleView.swift */; };
+		8D74F7622080818A0016C021 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74F7612080818A0016C021 /* AudioToolbox.framework */; };
+		8D74F764208081990016C021 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74F763208081990016C021 /* AVFoundation.framework */; };
+		8D74F766208081AF0016C021 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74F765208081AF0016C021 /* CoreGraphics.framework */; };
+		8D74F768208081BA0016C021 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74F767208081BA0016C021 /* CoreMedia.framework */; };
+		8D74F76A208081CC0016C021 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74F769208081CC0016C021 /* CoreVideo.framework */; };
+		8D74F76E208081FE0016C021 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74F76D208081FE0016C021 /* libbz2.tbd */; };
+		8D74F770208082160016C021 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74F76F208082150016C021 /* libz.tbd */; };
+		8D74F772208082650016C021 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74F771208082640016C021 /* MediaPlayer.framework */; };
+		8D74F774208082770016C021 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74F773208082770016C021 /* MobileCoreServices.framework */; };
+		8D74F776208082860016C021 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74F775208082860016C021 /* OpenGLES.framework */; };
+		8D74F778208082990016C021 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74F777208082990016C021 /* QuartzCore.framework */; };
+		8D74F77A208082B10016C021 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74F779208082B00016C021 /* VideoToolbox.framework */; };
+		8D74F77C208082B80016C021 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74F77B208082B80016C021 /* UIKit.framework */; };
+		8D74F77E2080834D0016C021 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74F77D2080834C0016C021 /* libstdc++.tbd */; };
+		8D74F781208086B00016C021 /* MBPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D74F780208086B00016C021 /* MBPlayerViewController.swift */; };
+		8D74F78520810E340016C021 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D74F78420810E340016C021 /* IJKMediaFramework.framework */; };
 		8D9A6309207B97BC00D8F11D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D9A630B207B97BC00D8F11D /* InfoPlist.strings */; };
 		8D9A630F207B985300D8F11D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D9A6311207B985300D8F11D /* Localizable.strings */; };
-		8D9A631A207B9D9600D8F11D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9A6319207B9D9600D8F11D /* AppDelegate.swift */; };
+		8D9A631A207B9D9600D8F11D /* MBAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9A6319207B9D9600D8F11D /* MBAppDelegate.swift */; };
 		8D9A631C207BA0EE00D8F11D /* MBConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9A631B207BA0EE00D8F11D /* MBConst.swift */; };
 		8D9A6323207BB7A200D8F11D /* MBTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9A6322207BB7A200D8F11D /* MBTabBar.swift */; };
 		8D9A632A207BBB0B00D8F11D /* MBTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9A6329207BBB0B00D8F11D /* MBTabBarController.swift */; };
 		8DDCCAB6207B458500D88565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DDCCAB4207B458500D88565 /* Main.storyboard */; };
 		8DDCCAB8207B458700D88565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DDCCAB7207B458700D88565 /* Assets.xcassets */; };
+		8DFF2E532081B69000B1750D /* MBRecommendCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF2E522081B69000B1750D /* MBRecommendCollectionViewController.swift */; };
+		8DFF2E562081FB0000B1750D /* MBCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF2E542081FB0000B1750D /* MBCollectionViewCell.swift */; };
+		8DFF2E572081FB0000B1750D /* MBCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DFF2E552081FB0000B1750D /* MBCollectionViewCell.xib */; };
+		8DFF2E5D208204C000B1750D /* MBCreatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF2E58208204BD00B1750D /* MBCreatorModel.swift */; };
+		8DFF2E5F208204C000B1750D /* MBLiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF2E5A208204BF00B1750D /* MBLiveModel.swift */; };
+		8DFF2E60208204C000B1750D /* MBLiveDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF2E5B208204BF00B1750D /* MBLiveDataModel.swift */; };
+		8DFF2E632082151200B1750D /* MBLiveDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF2E622082151200B1750D /* MBLiveDataViewModel.swift */; };
+		8DFF2E6520823EDD00B1750D /* MBTitleURLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF2E6420823EDD00B1750D /* MBTitleURLModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,25 +66,48 @@
 		8D37D1DE207C9AA2008591CD /* MBLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBLocationViewController.swift; sourceTree = "<group>"; };
 		8D37D1E0207C9AC7008591CD /* MBFocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBFocusViewController.swift; sourceTree = "<group>"; };
 		8D37D1E2207C9AE4008591CD /* MBProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBProfileViewController.swift; sourceTree = "<group>"; };
-		8D37D1E4207CD494008591CD /* MBRecommendationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBRecommendationViewController.swift; sourceTree = "<group>"; };
 		8D37D1E6207CD4B1008591CD /* MBMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBMusicViewController.swift; sourceTree = "<group>"; };
 		8D37D1E8207CD4C5008591CD /* MBRadioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBRadioViewController.swift; sourceTree = "<group>"; };
 		8D37D1EA207CE8D6008591CD /* TitleURLs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TitleURLs.plist; sourceTree = "<group>"; };
 		8D46BF0F207DA1CF00901928 /* HYQiHei-50J.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HYQiHei-50J.ttf"; sourceTree = "<group>"; };
 		8D46BF10207DA42100901928 /* MBHomeNavTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBHomeNavTitleView.swift; sourceTree = "<group>"; };
+		8D74F7612080818A0016C021 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8D74F763208081990016C021 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8D74F765208081AF0016C021 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8D74F767208081BA0016C021 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8D74F769208081CC0016C021 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		8D74F76D208081FE0016C021 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		8D74F76F208082150016C021 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8D74F771208082640016C021 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		8D74F773208082770016C021 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8D74F775208082860016C021 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		8D74F777208082990016C021 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8D74F779208082B00016C021 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		8D74F77B208082B80016C021 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8D74F77D2080834C0016C021 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		8D74F780208086B00016C021 /* MBPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPlayerViewController.swift; sourceTree = "<group>"; };
+		8D74F78420810E340016C021 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		8D9A630A207B97BC00D8F11D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D9A630C207B97ED00D8F11D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		8D9A6310207B985300D8F11D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8D9A6312207B985600D8F11D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		8D9A6313207B9B0200D8F11D /* MyBo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyBo-Bridging-Header.h"; sourceTree = "<group>"; };
-		8D9A6319207B9D9600D8F11D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8D9A6319207B9D9600D8F11D /* MBAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBAppDelegate.swift; sourceTree = "<group>"; };
 		8D9A631B207BA0EE00D8F11D /* MBConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBConst.swift; sourceTree = "<group>"; };
 		8D9A6322207BB7A200D8F11D /* MBTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBTabBar.swift; sourceTree = "<group>"; };
 		8D9A6329207BBB0B00D8F11D /* MBTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBTabBarController.swift; sourceTree = "<group>"; };
 		8DDCCAAD207B458500D88565 /* MyBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DDCCAB5207B458500D88565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DDCCAB7207B458700D88565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8DDCCABC207B458700D88565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DDCCABC207B458700D88565 /* MyBo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyBo-Info.plist"; sourceTree = "<group>"; };
+		8DFF2E522081B69000B1750D /* MBRecommendCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBRecommendCollectionViewController.swift; sourceTree = "<group>"; };
+		8DFF2E542081FB0000B1750D /* MBCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCollectionViewCell.swift; sourceTree = "<group>"; };
+		8DFF2E552081FB0000B1750D /* MBCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBCollectionViewCell.xib; sourceTree = "<group>"; };
+		8DFF2E58208204BD00B1750D /* MBCreatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBCreatorModel.swift; sourceTree = "<group>"; };
+		8DFF2E5A208204BF00B1750D /* MBLiveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBLiveModel.swift; sourceTree = "<group>"; };
+		8DFF2E5B208204BF00B1750D /* MBLiveDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBLiveDataModel.swift; sourceTree = "<group>"; };
+		8DFF2E622082151200B1750D /* MBLiveDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBLiveDataViewModel.swift; sourceTree = "<group>"; };
+		8DFF2E6420823EDD00B1750D /* MBTitleURLModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBTitleURLModel.swift; sourceTree = "<group>"; };
 		D575C544BD95EF08221427DA /* Pods_MyBo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56EFBEDA7F6173CCF0A6B7C /* Pods-MyBo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-MyBo/Pods-MyBo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +117,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D74F77E2080834D0016C021 /* libstdc++.tbd in Frameworks */,
+				8D74F77C208082B80016C021 /* UIKit.framework in Frameworks */,
+				8D74F77A208082B10016C021 /* VideoToolbox.framework in Frameworks */,
+				8D74F78520810E340016C021 /* IJKMediaFramework.framework in Frameworks */,
+				8D74F778208082990016C021 /* QuartzCore.framework in Frameworks */,
+				8D74F776208082860016C021 /* OpenGLES.framework in Frameworks */,
+				8D74F774208082770016C021 /* MobileCoreServices.framework in Frameworks */,
+				8D74F772208082650016C021 /* MediaPlayer.framework in Frameworks */,
+				8D74F770208082160016C021 /* libz.tbd in Frameworks */,
+				8D74F76E208081FE0016C021 /* libbz2.tbd in Frameworks */,
+				8D74F76A208081CC0016C021 /* CoreVideo.framework in Frameworks */,
+				8D74F768208081BA0016C021 /* CoreMedia.framework in Frameworks */,
+				8D74F766208081AF0016C021 /* CoreGraphics.framework in Frameworks */,
+				8D74F764208081990016C021 /* AVFoundation.framework in Frameworks */,
+				8D74F7622080818A0016C021 /* AudioToolbox.framework in Frameworks */,
 				548389002E0938081F8B200E /* Pods_MyBo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +142,21 @@
 		5A721C2A28A1683B52264743 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D74F78420810E340016C021 /* IJKMediaFramework.framework */,
+				8D74F77D2080834C0016C021 /* libstdc++.tbd */,
+				8D74F77B208082B80016C021 /* UIKit.framework */,
+				8D74F779208082B00016C021 /* VideoToolbox.framework */,
+				8D74F777208082990016C021 /* QuartzCore.framework */,
+				8D74F775208082860016C021 /* OpenGLES.framework */,
+				8D74F773208082770016C021 /* MobileCoreServices.framework */,
+				8D74F771208082640016C021 /* MediaPlayer.framework */,
+				8D74F76F208082150016C021 /* libz.tbd */,
+				8D74F76D208081FE0016C021 /* libbz2.tbd */,
+				8D74F769208081CC0016C021 /* CoreVideo.framework */,
+				8D74F767208081BA0016C021 /* CoreMedia.framework */,
+				8D74F765208081AF0016C021 /* CoreGraphics.framework */,
+				8D74F763208081990016C021 /* AVFoundation.framework */,
+				8D74F7612080818A0016C021 /* AudioToolbox.framework */,
 				D575C544BD95EF08221427DA /* Pods_MyBo.framework */,
 			);
 			name = Frameworks;
@@ -141,7 +217,7 @@
 		8D9A6318207B9D3C00D8F11D /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				8D9A6319207B9D9600D8F11D /* AppDelegate.swift */,
+				8D9A6319207B9D9600D8F11D /* MBAppDelegate.swift */,
 				8D9A631B207BA0EE00D8F11D /* MBConst.swift */,
 			);
 			path = Other;
@@ -224,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1B811C207EF1B300539E58 /* MBLaunchViewController.swift */,
+				8D74F780208086B00016C021 /* MBPlayerViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -285,6 +362,7 @@
 		8DDCCAC4207B4A4A00D88565 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8DFF2E622082151200B1750D /* MBLiveDataViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -292,6 +370,10 @@
 		8DDCCAC5207B4A4A00D88565 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8DFF2E58208204BD00B1750D /* MBCreatorModel.swift */,
+				8DFF2E5A208204BF00B1750D /* MBLiveModel.swift */,
+				8DFF2E5B208204BF00B1750D /* MBLiveDataModel.swift */,
+				8DFF2E6420823EDD00B1750D /* MBTitleURLModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,6 +382,8 @@
 			isa = PBXGroup;
 			children = (
 				8D46BF10207DA42100901928 /* MBHomeNavTitleView.swift */,
+				8DFF2E542081FB0000B1750D /* MBCollectionViewCell.swift */,
+				8DFF2E552081FB0000B1750D /* MBCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,9 +392,9 @@
 			isa = PBXGroup;
 			children = (
 				8D37D1DC207C9A79008591CD /* MBHomeViewController.swift */,
-				8D37D1E4207CD494008591CD /* MBRecommendationViewController.swift */,
 				8D37D1E6207CD4B1008591CD /* MBMusicViewController.swift */,
 				8D37D1E8207CD4C5008591CD /* MBRadioViewController.swift */,
+				8DFF2E522081B69000B1750D /* MBRecommendCollectionViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -441,7 +525,7 @@
 				8D46BF0F207DA1CF00901928 /* HYQiHei-50J.ttf */,
 				8DDCCAB4207B458500D88565 /* Main.storyboard */,
 				8DDCCAB7207B458700D88565 /* Assets.xcassets */,
-				8DDCCABC207B458700D88565 /* Info.plist */,
+				8DDCCABC207B458700D88565 /* MyBo-Info.plist */,
 				8D9A630B207B97BC00D8F11D /* InfoPlist.strings */,
 				8D9A6311207B985300D8F11D /* Localizable.strings */,
 				8D9A6313207B9B0200D8F11D /* MyBo-Bridging-Header.h */,
@@ -513,6 +597,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DFF2E572081FB0000B1750D /* MBCollectionViewCell.xib in Resources */,
 				8D9A630F207B985300D8F11D /* Localizable.strings in Resources */,
 				8D9A6309207B97BC00D8F11D /* InfoPlist.strings in Resources */,
 				8D37D1EB207CE8D7008591CD /* TitleURLs.plist in Resources */,
@@ -595,20 +680,27 @@
 				8D37D1DF207C9AA2008591CD /* MBLocationViewController.swift in Sources */,
 				8D37D1E7207CD4B1008591CD /* MBMusicViewController.swift in Sources */,
 				8D37D1E3207C9AE4008591CD /* MBProfileViewController.swift in Sources */,
+				8DFF2E5F208204C000B1750D /* MBLiveModel.swift in Sources */,
 				8D37D1DB207C9A18008591CD /* MBNavigationController.swift in Sources */,
+				8DFF2E632082151200B1750D /* MBLiveDataViewModel.swift in Sources */,
+				8DFF2E532081B69000B1750D /* MBRecommendCollectionViewController.swift in Sources */,
+				8D74F781208086B00016C021 /* MBPlayerViewController.swift in Sources */,
 				8D37D1E9207CD4C5008591CD /* MBRadioViewController.swift in Sources */,
 				8D9A631C207BA0EE00D8F11D /* MBConst.swift in Sources */,
 				8D37D1E1207C9AC7008591CD /* MBFocusViewController.swift in Sources */,
 				8D37D1DD207C9A79008591CD /* MBHomeViewController.swift in Sources */,
 				8D1B811F207EFB7500539E58 /* MBPresentationController.swift in Sources */,
+				8DFF2E6520823EDD00B1750D /* MBTitleURLModel.swift in Sources */,
+				8DFF2E60208204C000B1750D /* MBLiveDataModel.swift in Sources */,
+				8DFF2E562081FB0000B1750D /* MBCollectionViewCell.swift in Sources */,
+				8DFF2E5D208204C000B1750D /* MBCreatorModel.swift in Sources */,
 				8D37D1D9207C99E7008591CD /* MBBaseViewController.swift in Sources */,
 				8D46BF11207DA42100901928 /* MBHomeNavTitleView.swift in Sources */,
 				8D1B8121207F05DF00539E58 /* MBPresentedViewController.swift in Sources */,
-				8D37D1E5207CD494008591CD /* MBRecommendationViewController.swift in Sources */,
 				8D9A6323207BB7A200D8F11D /* MBTabBar.swift in Sources */,
 				8D9A632A207BBB0B00D8F11D /* MBTabBarController.swift in Sources */,
 				8D1B811D207EF1B300539E58 /* MBLaunchViewController.swift in Sources */,
-				8D9A631A207B9D9600D8F11D /* AppDelegate.swift in Sources */,
+				8D9A631A207B9D9600D8F11D /* MBAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -771,11 +863,31 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQ2W6JQN9Q;
-				INFOPLIST_FILE = MyBo/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "MyBo/MyBo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"LFLiveKit\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"YYKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mybar.MyBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -795,11 +907,31 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQ2W6JQN9Q;
-				INFOPLIST_FILE = MyBo/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "MyBo/MyBo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"LFLiveKit\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"YYKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mybar.MyBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

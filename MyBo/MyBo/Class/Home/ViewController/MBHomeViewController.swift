@@ -13,16 +13,22 @@ class MBHomeViewController: MBBaseViewController {
     @IBOutlet weak var contentScrollView: UIScrollView!
 
     lazy var homeNavTitleView: MBHomeNavTitleView = {
-        let homeNavTitleView =  MBHomeNavTitleView(frame: CGRect(x: 0, y: 0, width: 300, height: 44), titleArray: titleURLArray)
+        let homeNavTitleView =  MBHomeNavTitleView(frame: CGRect(x: 0, y: 0, width: 300, height: 44), titleURLArray: titleURLArray)
         homeNavTitleView.delegate = self
         return homeNavTitleView
     }()
 
-    lazy var titleURLArray: Array<Dictionary<String, String>> = {
-        var arrayList = NSArray(contentsOfFile: Bundle.main.path(forResource: "TitleURLs.plist", ofType: nil)!)!
-        return arrayList as! Array<Dictionary<String, String>>
+    lazy var titleURLArray: [MBTitleURLModel] = {
+        var arrayList = NSArray(contentsOfFile: Bundle.main.path(forResource: "TitleURLs.plist", ofType: nil)!)! as! Array<Dictionary<String, String>>
+        var titleURLArray: [MBTitleURLModel] = []
+        for item in arrayList {
+            let titleURLModel = MBTitleURLModel(fromDictionary: item)
+            titleURLArray.append(titleURLModel)
+        }
+
+        return titleURLArray
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,11 +59,11 @@ class MBHomeViewController: MBBaseViewController {
     }
 
     func addChildViewControllers() {
-        for item in titleURLArray {
-            let classType: AnyClass = NSClassFromString("MyBo." + item["viewController"]!)!
+        for titleURLModel in titleURLArray {
+            let classType: AnyClass = NSClassFromString("MyBo." + titleURLModel.viewController!)!
             let objecType : MBBaseViewController.Type = classType as! MBBaseViewController.Type
             let viewController: MBBaseViewController = objecType.init()
-            viewController.title = item["title"]
+            viewController.titleURLModel = titleURLModel
             self.addChildViewController(viewController)
         }
     }

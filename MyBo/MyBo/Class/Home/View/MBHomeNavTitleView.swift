@@ -15,7 +15,7 @@ import UIKit
 class MBHomeNavTitleView: UIView {
 
     private var titleScrollView: UIScrollView!
-    private var titleArray: Array<Dictionary<String, String>>!
+    private var titleURLArray: Array<MBTitleURLModel>!
     private var bottomLineView: UIView!
     private lazy var titleLabelArray: Array<UILabel> = {
         return Array()
@@ -23,14 +23,14 @@ class MBHomeNavTitleView: UIView {
     private var currentTitleLabelIndex = 0
     weak open var delegate: MBHomeNavTitleViewDelegate?
 
-    init(frame: CGRect, titleArray: Array<Dictionary<String, String>>) {
+    init(frame: CGRect, titleURLArray: Array<MBTitleURLModel>) {
         super.init(frame: frame)
 
         self.titleScrollView = UIScrollView(frame: frame)
         self.titleScrollView.showsVerticalScrollIndicator = false
         self.titleScrollView.showsHorizontalScrollIndicator = false
         self.titleScrollView.delegate = self
-        self.titleArray = titleArray
+        self.titleURLArray = titleURLArray
         self.bottomLineView = UIView()
         addTitleLabels()
 
@@ -46,10 +46,10 @@ class MBHomeNavTitleView: UIView {
         let height: CGFloat = self.titleScrollView.frame.height
         var x: CGFloat = margin
         
-        for index in 0 ..< titleArray.count {
+        for index in 0 ..< titleURLArray.count {
             let titleLabel = UILabel()
             titleLabel.tag = index
-            titleLabel.text = titleArray[index]["title"]
+            titleLabel.text = titleURLArray[index].title
             titleLabel.textColor = UIColor.white
             titleLabel.font = UIFont(name: "HYQiHei", size: 25)
             titleLabel.isUserInteractionEnabled = true
@@ -61,12 +61,12 @@ class MBHomeNavTitleView: UIView {
             //根据文本、字体大小计算宽度；以及自适应高度
             var textAttrs = Dictionary<NSAttributedStringKey, Any>()
             textAttrs[NSAttributedStringKey.font] = titleLabel.font
-            let text = titleArray[index]["title"]! as NSString
+            let text = titleURLArray[index].title as NSString
             let textSize = text.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: CGFloat(MAXFLOAT)), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: textAttrs, context: nil).size
 
             titleLabel.frame = CGRect(x: x, y: self.titleScrollView.centerY - textSize.height / 2.0, width: textSize.width, height: textSize.height)
 
-            if self.titleArray.count == 2 {
+            if self.titleURLArray.count == 2 {
                 if (index == 0) {
                     // 添加下划线
                     // 下划线宽度 = 按钮文字宽度 - 10
@@ -80,7 +80,7 @@ class MBHomeNavTitleView: UIView {
 
                     self.currentTitleLabelIndex = index
                 }
-            } else if self.titleArray.count > 3{
+            } else if self.titleURLArray.count > 3{
                 if (index == 1) {
                     // 添加下划线
                     // 下划线宽度 = 按钮文字宽度 - 10
@@ -96,8 +96,12 @@ class MBHomeNavTitleView: UIView {
                 }
             }
 
-            if (index == self.titleArray.count - 1) {
-                margin = 10.0
+            if (index == self.titleURLArray.count - 1) {
+                if IS_IPHONEX_DEVICE {
+                    margin = 20
+                }else {
+                    margin = 10
+                }
             } else {
                 margin = 20.0
             }

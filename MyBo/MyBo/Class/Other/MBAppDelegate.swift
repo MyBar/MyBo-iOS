@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  MBAppDelegate.swift
 //  MyBo
 //
 //  Created by lijingui2010 on 2018/4/9.
@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class MBAppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
