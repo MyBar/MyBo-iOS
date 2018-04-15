@@ -20,7 +20,7 @@ class MBRecommendViewController: MBBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.lightGray
+        self.view.backgroundColor = UIColor.white
 
         initCollectionView()
 
@@ -79,7 +79,7 @@ extension MBRecommendViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MBCollectionViewCell
 
         if let liveModel = self.liveModelList?[indexPath.row] {
-            cell.portraitImageView.kf.setImage(with: URL(string: liveModel.creator.portrait))
+            cell.portraitImageView.kf.setImage(with: URL(string: liveModel.creator.portrait), placeholder: UIImage(named: "default_room"))
             cell.cityLabel.text = liveModel.city
             cell.nickNameLabel.text = liveModel.creator.nick
             cell.onlineUsersLabel.text = "\(liveModel.onlineUsers.description)在看"
@@ -94,8 +94,8 @@ extension MBRecommendViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let liveModel = self.liveModelList?[indexPath.row] {
-            let playerVC = MBPlayerViewController(url: URL(string: liveModel.streamAddr)!)
-            self.navigationController?.pushViewController(playerVC, animated: true)
+            let playerVC = MBPlayerViewController(liveModel: liveModel)
+            self.present(playerVC, animated: true, completion: nil)
         }
     }
 }
