@@ -73,9 +73,110 @@
             </objects>
             <point key="canvasLocation" x="768.79999999999995" y="86.806596701649184"/>
         </scene>
+        <!--Chat Container View Controller-->
+        <scene sceneID="2o7-bd-2BD">
+            <objects>
+                <viewController storyboardIdentifier="MBChatContainerViewController" id="8yW-eN-qYF" customClass="MBChatContainerViewController" customModule="MyBo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EdX-VF-nkN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpW-dO-bBL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8yW-eN-qYF" id="XLq-W5-l8e"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cpW-dO-bBL" secondAttribute="trailing" id="JL9-JD-QbX"/>
+                            <constraint firstItem="cpW-dO-bBL" firstAttribute="top" secondItem="EdX-VF-nkN" secondAttribute="top" id="a5d-K0-VzI"/>
+                            <constraint firstAttribute="bottom" secondItem="cpW-dO-bBL" secondAttribute="bottom" id="g9j-jV-Ng3"/>
+                            <constraint firstItem="cpW-dO-bBL" firstAttribute="leading" secondItem="EdX-VF-nkN" secondAttribute="leading" id="syL-hd-eKV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rDu-iY-Fzo"/>
+                    </view>
+                    <connections>
+                        <outlet property="chatScrollView" destination="cpW-dO-bBL" id="KLV-Fx-ey0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T1L-V8-2Pw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1522.4000000000001" y="86.806596701649184"/>
+        </scene>
+        <!--Live Chat View Controller-->
+        <scene sceneID="x2d-rM-Qua">
+            <objects>
+                <viewController storyboardIdentifier="MBLiveChatViewController" id="F7s-nJ-D0f" customClass="MBLiveChatViewController" customModule="MyBo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Ei-8f-D1Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQW-d1-GJO">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mg_room_btn_chat_h" translatesAutoresizingMaskIntoConstraints="NO" id="xJH-8h-7ZM">
+                                        <rect key="frame" x="10" y="0.0" width="40" height="40"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mg_room_btn_message_h" translatesAutoresizingMaskIntoConstraints="NO" id="EMK-dm-oDS">
+                                        <rect key="frame" x="75" y="0.0" width="40" height="40"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mg_room_btn_share_h" translatesAutoresizingMaskIntoConstraints="NO" id="hDZ-ak-rfu">
+                                        <rect key="frame" x="175" y="0.0" width="40" height="40"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mg_room_btn_message_h" translatesAutoresizingMaskIntoConstraints="NO" id="twm-bE-6ee">
+                                        <rect key="frame" x="225" y="0.0" width="40" height="40"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mg_room_btn_chat_h" translatesAutoresizingMaskIntoConstraints="NO" id="bcY-PG-poP">
+                                        <rect key="frame" x="275" y="0.0" width="40" height="40"/>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mg_room_btn_close_h" translatesAutoresizingMaskIntoConstraints="NO" id="bdx-RC-Ex4">
+                                        <rect key="frame" x="325" y="0.0" width="40" height="40"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mg_room_btn_gift_h" translatesAutoresizingMaskIntoConstraints="NO" id="ZB7-dj-ie6">
+                                        <rect key="frame" x="125" y="0.0" width="40" height="40"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZB7-dj-ie6" firstAttribute="leading" secondItem="EMK-dm-oDS" secondAttribute="trailing" constant="10" id="6zg-eQ-qzQ"/>
+                                    <constraint firstItem="twm-bE-6ee" firstAttribute="leading" secondItem="hDZ-ak-rfu" secondAttribute="trailing" constant="10" id="AV6-Z6-eaH"/>
+                                    <constraint firstItem="bcY-PG-poP" firstAttribute="leading" secondItem="twm-bE-6ee" secondAttribute="trailing" constant="10" id="AWs-Wk-xbr"/>
+                                    <constraint firstItem="xJH-8h-7ZM" firstAttribute="leading" secondItem="yQW-d1-GJO" secondAttribute="leading" constant="10" id="ESt-Bx-siO"/>
+                                    <constraint firstItem="twm-bE-6ee" firstAttribute="centerY" secondItem="xJH-8h-7ZM" secondAttribute="centerY" id="Eri-Gm-tOQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="bdx-RC-Ex4" secondAttribute="bottom" constant="10" id="G8l-Lc-bNN"/>
+                                    <constraint firstItem="EMK-dm-oDS" firstAttribute="centerY" secondItem="xJH-8h-7ZM" secondAttribute="centerY" id="N0h-Jb-Wh2"/>
+                                    <constraint firstItem="hDZ-ak-rfu" firstAttribute="centerY" secondItem="xJH-8h-7ZM" secondAttribute="centerY" id="QUQ-ZE-tTO"/>
+                                    <constraint firstItem="bdx-RC-Ex4" firstAttribute="centerY" secondItem="xJH-8h-7ZM" secondAttribute="centerY" id="QWD-1I-w3M"/>
+                                    <constraint firstItem="bdx-RC-Ex4" firstAttribute="leading" secondItem="bcY-PG-poP" secondAttribute="trailing" constant="10" id="Z2J-WN-4RE"/>
+                                    <constraint firstAttribute="trailing" secondItem="bdx-RC-Ex4" secondAttribute="trailing" constant="10" id="ciD-QC-B69"/>
+                                    <constraint firstItem="ZB7-dj-ie6" firstAttribute="centerY" secondItem="xJH-8h-7ZM" secondAttribute="centerY" id="dCC-6c-abY"/>
+                                    <constraint firstItem="bcY-PG-poP" firstAttribute="centerY" secondItem="xJH-8h-7ZM" secondAttribute="centerY" id="eeI-yo-V6f"/>
+                                    <constraint firstItem="hDZ-ak-rfu" firstAttribute="leading" secondItem="ZB7-dj-ie6" secondAttribute="trailing" constant="10" id="qsz-cH-IWf"/>
+                                    <constraint firstAttribute="height" constant="50" id="vpA-6u-gjv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="yQW-d1-GJO" firstAttribute="leading" secondItem="OMy-T5-8Q0" secondAttribute="leading" id="07n-nD-teD"/>
+                            <constraint firstItem="yQW-d1-GJO" firstAttribute="bottom" secondItem="OMy-T5-8Q0" secondAttribute="bottom" id="1Zz-Hc-LcE"/>
+                            <constraint firstItem="yQW-d1-GJO" firstAttribute="trailing" secondItem="OMy-T5-8Q0" secondAttribute="trailing" id="PRO-UI-5t6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OMy-T5-8Q0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n14-tY-2p0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2343.1999999999998" y="86.806596701649184"/>
+        </scene>
     </scenes>
     <resources>
         <image name="launch_close" width="64" height="64"/>
         <image name="main_tab_back" width="375" height="64"/>
+        <image name="mg_room_btn_chat_h" width="40" height="40"/>
+        <image name="mg_room_btn_close_h" width="40" height="40"/>
+        <image name="mg_room_btn_gift_h" width="40" height="40"/>
+        <image name="mg_room_btn_message_h" width="40" height="40"/>
+        <image name="mg_room_btn_share_h" width="40" height="40"/>
     </resources>
 </document>

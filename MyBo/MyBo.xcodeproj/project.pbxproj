@@ -43,6 +43,9 @@
 		8D9A631C207BA0EE00D8F11D /* MBConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9A631B207BA0EE00D8F11D /* MBConst.swift */; };
 		8D9A6323207BB7A200D8F11D /* MBTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9A6322207BB7A200D8F11D /* MBTabBar.swift */; };
 		8D9A632A207BBB0B00D8F11D /* MBTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9A6329207BBB0B00D8F11D /* MBTabBarController.swift */; };
+		8DD13CCC2083480300B470BA /* MBLiveChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD13CCB2083480300B470BA /* MBLiveChatViewController.swift */; };
+		8DD13CCE20834A6B00B470BA /* MBChatContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD13CCD20834A6B00B470BA /* MBChatContainerViewController.swift */; };
+		8DD13CD020834B6700B470BA /* MBNoneChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD13CCF20834B6700B470BA /* MBNoneChatViewController.swift */; };
 		8DDCCAB6207B458500D88565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DDCCAB4207B458500D88565 /* Main.storyboard */; };
 		8DDCCAB8207B458700D88565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DDCCAB7207B458700D88565 /* Assets.xcassets */; };
 		8DFF2E532081B69000B1750D /* MBRecommendCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF2E522081B69000B1750D /* MBRecommendCollectionViewController.swift */; };
@@ -96,6 +99,9 @@
 		8D9A631B207BA0EE00D8F11D /* MBConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBConst.swift; sourceTree = "<group>"; };
 		8D9A6322207BB7A200D8F11D /* MBTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBTabBar.swift; sourceTree = "<group>"; };
 		8D9A6329207BBB0B00D8F11D /* MBTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBTabBarController.swift; sourceTree = "<group>"; };
+		8DD13CCB2083480300B470BA /* MBLiveChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBLiveChatViewController.swift; sourceTree = "<group>"; };
+		8DD13CCD20834A6B00B470BA /* MBChatContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBChatContainerViewController.swift; sourceTree = "<group>"; };
+		8DD13CCF20834B6700B470BA /* MBNoneChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBNoneChatViewController.swift; sourceTree = "<group>"; };
 		8DDCCAAD207B458500D88565 /* MyBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DDCCAB5207B458500D88565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DDCCAB7207B458700D88565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -301,6 +307,9 @@
 			children = (
 				8D1B811C207EF1B300539E58 /* MBLaunchViewController.swift */,
 				8D74F780208086B00016C021 /* MBPlayerViewController.swift */,
+				8DD13CCD20834A6B00B470BA /* MBChatContainerViewController.swift */,
+				8DD13CCB2083480300B470BA /* MBLiveChatViewController.swift */,
+				8DD13CCF20834B6700B470BA /* MBNoneChatViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -685,6 +694,8 @@
 				8DFF2E632082151200B1750D /* MBLiveDataViewModel.swift in Sources */,
 				8DFF2E532081B69000B1750D /* MBRecommendCollectionViewController.swift in Sources */,
 				8D74F781208086B00016C021 /* MBPlayerViewController.swift in Sources */,
+				8DD13CD020834B6700B470BA /* MBNoneChatViewController.swift in Sources */,
+				8DD13CCC2083480300B470BA /* MBLiveChatViewController.swift in Sources */,
 				8D37D1E9207CD4C5008591CD /* MBRadioViewController.swift in Sources */,
 				8D9A631C207BA0EE00D8F11D /* MBConst.swift in Sources */,
 				8D37D1E1207C9AC7008591CD /* MBFocusViewController.swift in Sources */,
@@ -699,6 +710,7 @@
 				8D1B8121207F05DF00539E58 /* MBPresentedViewController.swift in Sources */,
 				8D9A6323207BB7A200D8F11D /* MBTabBar.swift in Sources */,
 				8D9A632A207BBB0B00D8F11D /* MBTabBarController.swift in Sources */,
+				8DD13CCE20834A6B00B470BA /* MBChatContainerViewController.swift in Sources */,
 				8D1B811D207EF1B300539E58 /* MBLaunchViewController.swift in Sources */,
 				8D9A631A207B9D9600D8F11D /* MBAppDelegate.swift in Sources */,
 			);

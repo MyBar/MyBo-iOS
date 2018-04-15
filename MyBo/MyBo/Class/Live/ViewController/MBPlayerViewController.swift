@@ -24,6 +24,12 @@ class MBPlayerViewController: MBBaseViewController {
         return button
     }()
 
+    lazy var chatContainerVC: MBChatContainerViewController = {
+        let chatContainerVC = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "MBChatContainerViewController") as! MBChatContainerViewController
+
+        return chatContainerVC
+    }()
+
     init(liveModel: MBLiveModel) {
         self.liveModel = liveModel
         super.init(nibName: nil, bundle: nil)
@@ -73,6 +79,7 @@ class MBPlayerViewController: MBBaseViewController {
     func initUI() {
         initBlurImageView()
 
+        addChildViewController()
     }
 
     func initBlurImageView() {
@@ -87,6 +94,15 @@ class MBPlayerViewController: MBBaseViewController {
         //添加到要有毛玻璃特效的控件中
         visualEffectView.frame = self.blurImageView.bounds;
         blurImageView.addSubview(visualEffectView)
+    }
+
+    func addChildViewController() {
+        self.addChildViewController(self.chatContainerVC)
+        self.view.addSubview(self.chatContainerVC.view)
+        self.chatContainerVC.view.mas_makeConstraints { (make) in
+            make?.edges.equalTo()(self.view)
+        }
+        //self.chatContainerVC.didMove(toParentViewController: self)
     }
 
     @objc func closeButtonDidClick() {
